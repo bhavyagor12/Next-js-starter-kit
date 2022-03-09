@@ -9,10 +9,7 @@ function App({ Component,
 }) {
   return (
   <SessionProvider session={pageProps.session}>
-    <ThemeProvider enableSystem={true} attribute="class">
   <Component {...pageProps} />
-  </ThemeProvider>
-
   </SessionProvider>
   
   )

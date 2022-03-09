@@ -11,7 +11,7 @@ import { signIn} from 'next-auth/react'
 const login = () => {
 return(
     
-          <main className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100">
+          <main className="flex flex-col items-center justify-center min-h-screen py-2 bg-[#032A5D]">
           
        <Head>
       <title>Sign in</title>
