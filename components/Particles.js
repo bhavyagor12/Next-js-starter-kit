@@ -40,7 +40,7 @@ function Particle() {
                   move:{
                       enable:true,
                       random:true,
-                      speed:0.6,
+                      speed:2.0,
                       attract:{
                           rotateX:600,
                           rotateY:1200
