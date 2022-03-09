@@ -7,10 +7,10 @@ import {VscGithub} from 'react-icons/vsc'
 import {AiFillLinkedin,AiFillGoogleSquare} from 'react-icons/ai'
 import {FaRegEnvelope} from 'react-icons/fa'
 import {RiLockPasswordFill} from 'react-icons/ri' 
-import { signIn} from 'next-auth/react'
+import {getProviders, signIn} from 'next-auth/react'
 import Particle from '../components/Particles'
 
-const login = () => {
+function Login(){
 return(
     
   <>
@@ -40,7 +40,11 @@ return(
         </div>   
         <div className="p-5"><button onClick={signIn} className="border-2  border-gray-200 rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#0082EF] hover:text-white"><VscGithub size={40} /></button></div>   
         <div className="p-5"><button onClick={signIn} className="border-2 border-gray-200 rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#0082EF] hover:text-white"><AiFillLinkedin size={40}/></button></div>   
-
+        
+        {Object.values(providers).map((provider)=>(
+          <div className="p-5"><button onClick={()=>signIn(provider.id,{callbackUrl:"/"})} className="border-2 border-gray-200 rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#0082EF] hover:text-white">SPOTIFY</button></div>
+        ))}
+             
       
         </div>
       </div>
@@ -69,4 +73,14 @@ return(
 }
   
 
-export default login
+export default Login
+export async function getServerSideProps(){
+  const providers = await getProviders();
+
+  return{
+    props:
+    {
+      providers,
+    },
+  };
+}
