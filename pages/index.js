@@ -1,7 +1,6 @@
 
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
 import Signin from './login'
 import { signIn, signOut, useSession } from 'next-auth/react'
 import {FcGoogle} from 'react-icons/fc'
