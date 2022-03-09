@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Particle from '../components/Particles'
 import Logo from '../assets/logo-removebg-preview.png'
-import { profile } from 'console'
 import Profile from '../components/Profile'
 
 const profile = () => {

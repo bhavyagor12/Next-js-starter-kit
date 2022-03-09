@@ -6,7 +6,7 @@ const Profile = () => {
     <div className='grid grid-cols-4 gap 4'>
     <div className='avatar'>
         <div className='rounded-full w-36 h-36'>
-        <Image src="https://api.lorem.space/image/face?hash=92310">
+        
             </div>
 
     </div>
