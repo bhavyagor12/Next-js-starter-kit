@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { VscGithub } from 'react-icons/vsc'
 import { AiFillLinkedin, AiFillGoogleSquare } from 'react-icons/ai'
-import { signIn } from 'next-auth/react'
+import { getProviders, signIn } from 'next-auth/react'
 import Particle from '../components/Particles'
 
 const login = () => {
