@@ -2,10 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FcGoogle } from 'react-icons/fc'
 import { VscGithub } from 'react-icons/vsc'
 import { AiFillLinkedin, AiFillGoogleSquare } from 'react-icons/ai'
-
 import { signIn } from 'next-auth/react'
 import Particle from '../components/Particles'
 
@@ -56,6 +54,18 @@ const login = () => {
                       <AiFillLinkedin size={40} />
                     </button>
                   </div>
+                  {Object.values(providers).map((provider) => (
+                    <div className="p-5">
+                      <button
+                        onClick={() =>
+                          signIn(provider.id, { callbackUrl: '/' })
+                        }
+                        className="inline-block rounded-full border-2 border-gray-200 px-12 py-2 font-semibold hover:bg-[#0082EF] hover:text-white"
+                      >
+                        SPOTIFY
+                      </button>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -79,3 +89,13 @@ const login = () => {
 }
 
 export default login
+
+export async function getServerSideProps() {
+  const providers = await getProviders()
+
+  return {
+    props: {
+      providers,
+    },
+  }
+}
