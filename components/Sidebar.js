@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Link from 'next/link'
 import {AiOutlineHome} from 'react-icons/ai'
 import {CgProfile} from 'react-icons/cg'
 import {BsNewspaper} from 'react-icons/bs'
 import {VscFileSubmodule, VscSearch} from 'react-icons/vsc'
 import {BsChatSquareDots} from 'react-icons/bs'
+
 export default function Sidebar() {
   return (
     <div className="text-gray-500 p-5 text-sm border-r border-gray-900">
@@ -27,7 +28,11 @@ export default function Sidebar() {
           </button>
           <button className="flex items-center space-x-2 hover:text-white">
               <BsNewspaper  className="h-5 w-5" />
+              <Link href='/newsPage'>
               <p>News</p>
+              </Link>
+              
+
           </button>
           <button className="flex items-center space-x-2 hover:text-white">
               <BsChatSquareDots  className="h-5 w-5" />

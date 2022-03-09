@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import {FcGoogle, } from 'react-icons/fc'
 import {VscGithub} from 'react-icons/vsc'
 import {AiFillLinkedin,AiFillGoogleSquare} from 'react-icons/ai'
@@ -49,7 +50,14 @@ return(
           <h2 className="text-3xl font-bold mb-2 "> Hello There!</h2>
           <div className="border-2 w-10 border-white inline-block mb-2" ></div>
           <p className="mb-10"> You have to login to use our amazing features</p>
-          <button className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-[#0082EF]">Explore</button>
+          <button className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-[#0082EF]">
+            <Link href="/homePage">
+              Explore
+              
+           </Link>  
+            
+            
+            </button>
       </div>
       
       </div>
