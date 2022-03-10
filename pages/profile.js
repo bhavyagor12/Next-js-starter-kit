@@ -1,7 +1,14 @@
 import React from 'react'
+import Sidebar from '../components/Sidebar'
+import Profile from '../components/Profile'
 
 function profile() {
-  return <div>profile</div>
+  return (
+    <div className="flex">
+      <Sidebar />
+      <Profile />
+    </div>
+  )
 }
 
 export default profile

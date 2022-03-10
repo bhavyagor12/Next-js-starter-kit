@@ -1,62 +1,55 @@
-import React from 'react';
-import { Home_Page } from "../assets/Home_Page.jpeg";
-import { stock } from "../assets/stock.png";
+import React from 'react'
 
-export const Profile = () => {
+export default function Profile() {
   return (
-    <div className='max-w-6xl mx-5 p-10 xl:mx-auto'>
-        <div className='grid grid-cols-4 gap-4'>
-            <div className='avatar justify-center'>
-                <div className='rounded-full w-36 h-36'>
-                <Image src={Home_Page} height="200" width="200"/>
-
-                </div>
-            </div>
-            <div className='col-span-2'>
-            <span className="text-[#ff443a]">Devraj</span> Mishra
-            <div className='cursor-pointer inline text-sm text-gray-700 font-semibold p-1 px-2 border border-gray-200 rounded mr-4'>
-                Edit Profile
-            </div>
-            <div><span className='font-semibold'>14</span>projects worked on</div>
-                        </div>
-                <URL>linkedin</URL>
-                <URL>github</URL>
-        </div>
-        <br></br>
-        {/* <div>
-            <span className='font-semibold'>PROJECTS</span>
-        </div> */}
-    <div>
-    <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h3 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Projects
-        </h3>
+    <div className="flex-grow bg-gradient-to-r from-cyan-500 to-blue-500">
+      <div className="mt-5 flex justify-center font-sans text-6xl font-bold ">
+        <span className="mr-2 text-black ">Here's Your Profile!!</span>
       </div>
-      {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-          {/* Single card */}
-          <a
-            href="https://tailwindmasterkit.com"
-            className="w-full block shadow-2xl"
-          >
-            <div className="relative overflow-hidden">
-            <Image src={stock} height="200" width="200"
-                alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Tailwind Master Kit
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                01
-              </h1>
+      <div class="max-w-screen flex max-h-screen items-center justify-center overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-500 py-20  ">
+        <div class="xl:w-2/7 easy-in-out container transform bg-white    shadow-lg  duration-200    sm:w-full   md:w-2/3 lg:w-2/6">
+          <div class=" h-32 overflow-hidden">
+            <img
+              class="w-full"
+              src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+              alt=""
+            />
+          </div>
+          <div class="-mt-12 flex justify-center  px-5">
+            <img
+              class="h-32 w-32 rounded-full bg-white p-2   "
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+              alt=""
+            />
+          </div>
+          <div class=" ">
+            <div class="px-14 text-center">
+              <h2 class="text-3xl font-bold text-gray-800">Mohit Dhiman</h2>
+              <p class="mt-2 text-gray-400">@immohitdhiman</p>
+              <p class="mt-2 text-gray-600">
+                Hey this is Mohit Dhiman and i have worked on multiple stacks
+                like MERN AND PERN <br /> I m alo interested in blockchain and
+                plan to do work on the same{' '}
+              </p>
             </div>
-          </a>
+            <hr class="mt-6" />
+            <div class="flex  bg-gray-50 ">
+              <div class="w-1/2 cursor-pointer p-4 text-center hover:bg-gray-100">
+                <p>
+                  <span class="font-semibold">9382345453</span>
+                </p>
+              </div>
+              <div class="border"></div>
+              <div class="w-1/2 cursor-pointer p-4 text-center hover:bg-gray-100">
+                <p>
+                  {' '}
+                  <span class="font-semibold">MohitDhiman@gmail.com</span>{' '}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    </div></div>
+    </div>
   )
 }

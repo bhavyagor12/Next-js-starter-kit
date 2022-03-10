@@ -1,19 +1,15 @@
 import React from 'react'
-import Image from 'next/image'
-import Home_Page from '../assets/Home_Page.jpeg'
-import Particle from '../components/Particles'
-import Card from './Card'
+import Particle from './Particles'
 import Link from 'next/link'
 
-const Center = () => {
+export default function ExploreProject() {
   return (
     <div className="min-h-screen flex-grow flex-col bg-gradient-to-r from-cyan-500 to-blue-500">
       <Particle />
-      <div className="flex items-center justify-center text-2xl text-white">
+      <div className="flex items-center justify-center  text-2xl text-white">
         <div className="mt-5 font-sans text-6xl font-bold ">
-          <span className="mr-2 text-black ">Smart</span> and{' '}
-          <span className="ml-2 mr-2 text-black">talented</span> people are our
-          thing.
+          <span className="mr-2 text-black ">Project</span>
+          <span className="ml-2 mr-2 text-black">Feed</span>
         </div>
       </div>
 
@@ -22,22 +18,24 @@ const Center = () => {
           <div className="m-10 flex p-10">
             <div class="max-w-sm overflow-hidden rounded-xl bg-gray-100 shadow-lg">
               <div class="px-6 py-4">
-                <div class="mb-2 text-xl font-bold">FIND A PROJECT</div>
+                <div class="mb-2 text-xl font-bold">Find your Dev Partner</div>
                 <p class="py-3 text-base text-gray-700">
-                  Find people that are working on projects that need members to
-                  contribute. This page basically shows how many projects are
-                  available in the feed that you can view
+                  connect developers with other developers
+                  <br />
+                  finding collaborators would be very easy
+                  <br />
+                  find features that are unique
                 </p>
               </div>
-              <div class="px-6 pt-10 pb-2">
+              <div class=" flex-end px-6 pt-10 pb-2">
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #developers
+                  DevMates
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #members
+                  #MERN
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #collaborators
+                  15hrs
                 </span>
               </div>
             </div>
@@ -48,22 +46,23 @@ const Center = () => {
           <Link href="/addProject">
             <div class="max-w-sm overflow-hidden rounded-xl bg-gray-100 shadow-lg">
               <div class="px-6 py-4">
-                <div class="mb-2 text-xl font-bold">ADD A NEW PROJECT</div>
+                <div class="mb-2 text-xl font-bold">
+                  Employee Management System
+                </div>
                 <p class="py-3 text-base text-gray-700">
-                  Find members to help you create your own project, helps you
-                  connect to people with your interests and allows you to build
-                  a community for futher usage
+                  A System built using Java to manage the details of all the
+                  employees of a particular firm.
                 </p>
               </div>
               <div class="px-6 pt-10 pb-2">
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #projects
+                  DevMates
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #owners
+                  #Java
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #connections
+                  8hrs
                 </span>
               </div>
             </div>
@@ -75,24 +74,22 @@ const Center = () => {
             <div class="max-w-sm overflow-hidden rounded-xl bg-gray-100 shadow-lg">
               <div class="px-6 py-4">
                 <div class="mb-2 text-xl font-bold">
-                  READ THE LATEST TECH NEWS
+                  Travel Application using React.js
                 </div>
                 <p class="py-3 text-base text-gray-700">
-                  This is the news that will be available for you to check out
-                  This page is right now fetching all current news that you will
-                  be interested in and just to keep the developers on our site
-                  updated
+                  We are building a Travel web application to revolutionize the
+                  the world of travel and integrate technology into this field.
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #news
+                  DevMates
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #feed
+                  #Java
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #updates
+                  12hrs
                 </span>
               </div>
             </div>
@@ -105,24 +102,22 @@ const Center = () => {
           <div className="m-10 flex p-10">
             <div class="max-w-sm overflow-hidden rounded-xl bg-gray-100 shadow-lg">
               <div class="px-6 py-4">
-                <div class="mb-2 text-xl font-bold">
-                  CHAT WITH OTHER DEVELOPERS!
-                </div>
+                <div class="mb-2 text-xl font-bold">CHATBOT USING PYTHON</div>
                 <p class="py-3 text-base text-gray-700">
-                  This page will help you connect with other developers and will
-                  allow sharing of info so that you don't have to use 3rd party
-                  tools.
+                  We are creaing a Chatbot with the help of Python Programming
+                  languages. It is a great chance for beginners to get skiled as
+                  we are using in-depth concepts of Python.
                 </p>
               </div>
-              <div class="px-6 pt-16 pb-0">
+              <div class="px-6 pt-12">
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #connect
+                  DevMates
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #chat
+                  #Python
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #messages
+                  6hrs
                 </span>
               </div>
             </div>
@@ -133,23 +128,21 @@ const Center = () => {
           <div className="m-10 flex p-10">
             <div class="max-w-sm overflow-hidden rounded-xl bg-gray-100 shadow-lg">
               <div class="px-6 py-4">
-                <div class="mb-2 text-xl font-bold">VIEW YOUR PROFILE</div>
+                <div class="mb-2 text-xl font-bold">Netflix-Clone</div>
                 <p class="py-3 text-base text-gray-700">
-                  This page will be the base of your account. This page also
-                  allows you to add what you have worked on before so that
-                  people can see what you like and dislike Everything here will
-                  be developer related.
+                  Yes, you heard it right, we are developing a Netflix clone
+                  using Mern Stack. Who all are in to join us?
                 </p>
               </div>
               <div class="relative px-6 pt-4 pb-2">
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #photography
+                  DevMates
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #travel
+                  #MERN
                 </span>
                 <span class="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
-                  #winter
+                  20hr
                 </span>
               </div>
             </div>
@@ -159,5 +152,3 @@ const Center = () => {
     </div>
   )
 }
-
-export default Center

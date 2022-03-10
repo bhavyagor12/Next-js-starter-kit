@@ -5,7 +5,7 @@ import { CgProfile } from 'react-icons/cg'
 import { BsNewspaper } from 'react-icons/bs'
 import { VscFileSubmodule, VscSearch } from 'react-icons/vsc'
 import { BsChatSquareDots } from 'react-icons/bs'
-import { signout, useSession } from 'next-auth/react'
+import { signOut, useSession } from 'next-auth/react'
 
 export default function Sidebar() {
   const { data: session, status } = useSession()
@@ -33,21 +33,21 @@ export default function Sidebar() {
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <VscFileSubmodule className="h-5 w-5" />
-          <p> Post a Projects</p>
+          <Link href="/addProject">
+            <p> Post Projects</p>
+          </Link>
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <VscSearch className="h-5 w-5" />
-          <p>Find Projects</p>
+          <Link href="/exploreProject">
+            <p>Explore Projects</p>
+          </Link>
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <BsNewspaper className="h-5 w-5" />
           <Link href="/newsPage">
             <p>News</p>
           </Link>
-        </button>
-        <button className="flex items-center space-x-2 hover:text-white">
-          <BsChatSquareDots className="h-5 w-5" />
-          <p>Chat</p>
         </button>
 
         <hr className="border-t-[0.1px] border-gray-900" />
